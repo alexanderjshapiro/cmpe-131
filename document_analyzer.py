@@ -1,7 +1,4 @@
-from sort import *
-
-
-def mostFrequent(path="document.txt"):
+def mostFrequent(path):
     file = open(path, 'r')
     text = file.readlines()
     file.close()
@@ -48,6 +45,3 @@ def mostFrequent(path="document.txt"):
     print()
     for line in top_five:
         print(f"{line[0]}: {line[1]}")
-
-
-mostFrequent("document.txt")
